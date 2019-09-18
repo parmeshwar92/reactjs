@@ -1,0 +1,24 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import DataTables from './datatables';
+import Layout from  './components/Layout';
+import "./styles.css";
+
+
+class  App extends React.Component {
+  render(){
+  return (
+    <div className="App">
+    
+      <h1>Welcome to product Application!</h1>
+      <h2>Product List</h2>
+      
+      <DataTables/>
+      
+    </div>
+  );
+}
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
